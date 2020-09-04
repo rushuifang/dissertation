@@ -1,4 +1,3 @@
-console.log("hello");
 var cities = [];
 var totalCities = 5;
 
@@ -54,6 +53,7 @@ function draw() {
     var d = calcDistance(cities);
     if (d < recordDistance) {
         recordDistance = d;
+        console.log(recordDistance);
         bestEver = cities.slice();
     }
 }
